@@ -10,14 +10,16 @@ import Foundation
 
 public struct ViewableHandlerConfig {
     public var timeInterval: TimeInterval = 1.0
-    public var viewableRatio: Float = 1.0
+    public var intersectionRatio: Float = 1.0
     public var transparencyRatio: Float = 0
     
     public init() {}
     
-    public init(timeInterval: TimeInterval, viewableRatio: Float, transparencyRatio: Float) {
+    public init(timeInterval: TimeInterval,
+                intersectionRatio: Float,
+                transparencyRatio: Float) {
         self.timeInterval = timeInterval
-        self.viewableRatio = viewableRatio
+        self.intersectionRatio = intersectionRatio
         self.transparencyRatio = transparencyRatio
     }
 }

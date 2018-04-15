@@ -27,8 +27,8 @@ extension ViewableHandler where Base: UIView {
             print("ViewableHandler error: timeInterval must be greater than 0.")
             return
         }
-        if self.config.viewableRatio <= 0 || self.config.viewableRatio > 1.0 {
-            print("ViewableHandler error: viewableRatio must be greater than 0 and less than or equal to 1.0.")
+        if self.config.intersectionRatio <= 0 || self.config.intersectionRatio > 1.0 {
+            print("ViewableHandler error: intersectionRatio must be greater than 0 and less than or equal to 1.0.")
             return
         }
         if self.config.transparencyRatio < 0 || self.config.transparencyRatio >= 1.0 {
@@ -55,7 +55,7 @@ extension ViewableHandler where Base: UIView {
             self.timer?.invalidate()
             return .unviewable
         }
-        let isInWindow = self.isVisibleInParentRect(target: view, parent: window, ratio: CGFloat(self.config.viewableRatio))
+        let isInWindow = self.isIntersectRect(target: view, parent: window, ratio: CGFloat(self.config.intersectionRatio))
         return isVisibleAllViewHierarchy && isInWindow ? .viewable : .unviewable
     }
     
@@ -83,7 +83,7 @@ extension ViewableHandler where Base: UIView {
         return nil
     }
     
-    func isVisibleInParentRect(target: UIView, parent: UIView, ratio: CGFloat) -> Bool {
+    func isIntersectRect(target: UIView, parent: UIView, ratio: CGFloat) -> Bool {
         let coordinates = target.convert(target.bounds, to: parent)
         let intersection = coordinates.intersection(parent.frame)
         let intersectionArea = floor(intersection.width * intersection.height)
