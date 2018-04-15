@@ -21,8 +21,11 @@ public class ViewableHandler<Base> {
     
     @objc func checkViewableTimerTask(_ timer: Timer) {
         guard let view = self.base as? UIView else { return }
-        self.state = view.vh.getViewableState(of: view)
-        self.callback?(self.state)
+        let state = view.vh.getViewableState(of: view)
+        if self.state != state {
+            self.state = state
+            self.callback?(self.state)
+        }
     }
     
 }
