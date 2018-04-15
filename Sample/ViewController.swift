@@ -19,8 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
     }
     
     @IBAction func startHandle(_ sender: Any) {
@@ -33,9 +32,9 @@ class ViewController: UIViewController {
             .changed { state in
                 switch state {
                 case .visible:
-                    self.navigationController?.navigationBar.barTintColor = UIColor.green
+                    self.navigationController?.navigationBar.barTintColor = UIColor(red:0.26, green:0.63, blue:0.28, alpha:1.0)
                 case .invisible:
-                    self.navigationController?.navigationBar.barTintColor = UIColor.red
+                    self.navigationController?.navigationBar.barTintColor = UIColor(red:0.96, green:0.26, blue:0.21, alpha:1.0)
             }
             self.navigationItem.title = state.rawValue
             print("\(self.currentTime): \(state.rawValue)")
