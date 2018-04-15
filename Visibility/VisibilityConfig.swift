@@ -1,6 +1,6 @@
 //
-//  ViewableHandlerConfig.swift
-//  ViewableHandler
+//  VisibilityConfig.swift
+//  Visibility
 //
 //  Created by yuki.kuroda on 2018/04/13.
 //  Copyright © 2018年 darquro. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct ViewableHandlerConfig {
+public struct VisibilityConfig {
     public var timeInterval: TimeInterval = 0.5
     public var intersectionRatio: Float = 1.0
     public var transparencyRatio: Float = 0

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ViewableHandler
+import Visibility
 
 class ViewController: UIViewController {
 
@@ -20,17 +20,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startHandle(_ sender: Any) {
-        targetView.vh
+        targetView.visibility
 //            .setConfig { config in
 //                config.timeInterval = 1.0
 //                config.intersectionRatio = 1.0
 //                config.transparencyRatio = 0.8
 //            }
-            .viewableChanged { state in
+            .changed { state in
                 switch state {
-                case .viewable:
+                case .visible:
                     self.navigationController?.navigationBar.barTintColor = UIColor.green
-                case .unviewable:
+                case .unvisible:
                     self.navigationController?.navigationBar.barTintColor = UIColor.red
             }
             self.navigationItem.title = state.rawValue
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func stopHandle(_ sender: Any) {
-        targetView.vh.invalidate()
+        targetView.visibility.invalidate()
     }
     
     @IBAction func removeView(_ sender: Any) {

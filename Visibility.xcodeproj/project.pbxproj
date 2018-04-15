@@ -7,20 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0DB2B1C20806B0D00E503FB /* ViewableHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DB2B1220806B0D00E503FB /* ViewableHandler.framework */; };
-		B0DB2B2120806B0D00E503FB /* ViewableHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2B2020806B0D00E503FB /* ViewableHandlerTests.swift */; };
-		B0DB2B2320806B0D00E503FB /* ViewableHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = B0DB2B1520806B0D00E503FB /* ViewableHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0DB2B1C20806B0D00E503FB /* Visibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DB2B1220806B0D00E503FB /* Visibility.framework */; };
+		B0DB2B2320806B0D00E503FB /* Visibility.h in Headers */ = {isa = PBXBuildFile; fileRef = B0DB2B1520806B0D00E503FB /* Visibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0DB2B3320806B3500E503FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2B3220806B3500E503FB /* AppDelegate.swift */; };
 		B0DB2B3520806B3500E503FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2B3420806B3500E503FB /* ViewController.swift */; };
 		B0DB2B3820806B3500E503FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0DB2B3620806B3500E503FB /* Main.storyboard */; };
 		B0DB2B3A20806B3800E503FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0DB2B3920806B3800E503FB /* Assets.xcassets */; };
 		B0DB2B3D20806B3800E503FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0DB2B3B20806B3800E503FB /* LaunchScreen.storyboard */; };
-		B0DB2B5120806BB100E503FB /* ViewableHandler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DB2B1220806B0D00E503FB /* ViewableHandler.framework */; };
-		B0DB2B5320806C4500E503FB /* UIView+ViewableHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2B5220806C4500E503FB /* UIView+ViewableHandler.swift */; };
-		B0DB2B5520806D9500E503FB /* ViewableHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2B5420806D9500E503FB /* ViewableHandler.swift */; };
-		B0DB2B5720806E8D00E503FB /* ViewableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2B5620806E8D00E503FB /* ViewableState.swift */; };
-		B0DB2B5C2080C6E700E503FB /* ViewableHandlerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2B5B2080C6E700E503FB /* ViewableHandlerConfig.swift */; };
-		B0DD73822083334100EF0AD3 /* ViewableHandler.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B0DB2B1220806B0D00E503FB /* ViewableHandler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0DB2B5120806BB100E503FB /* Visibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DB2B1220806B0D00E503FB /* Visibility.framework */; };
+		B0DB2B5320806C4500E503FB /* UIView+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2B5220806C4500E503FB /* UIView+Visibility.swift */; };
+		B0DB2B5520806D9500E503FB /* Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2B5420806D9500E503FB /* Visibility.swift */; };
+		B0DB2B5720806E8D00E503FB /* VisibilityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2B5620806E8D00E503FB /* VisibilityState.swift */; };
+		B0DB2B5C2080C6E700E503FB /* VisibilityConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2B5B2080C6E700E503FB /* VisibilityConfig.swift */; };
+		B0DD73822083334100EF0AD3 /* Visibility.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B0DB2B1220806B0D00E503FB /* Visibility.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,19 +39,17 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B0DD73822083334100EF0AD3 /* ViewableHandler.framework in CopyFiles */,
+				B0DD73822083334100EF0AD3 /* Visibility.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B0DB2B1220806B0D00E503FB /* ViewableHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewableHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0DB2B1520806B0D00E503FB /* ViewableHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewableHandler.h; sourceTree = "<group>"; };
+		B0DB2B1220806B0D00E503FB /* Visibility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Visibility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0DB2B1520806B0D00E503FB /* Visibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Visibility.h; sourceTree = "<group>"; };
 		B0DB2B1620806B0D00E503FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0DB2B1B20806B0D00E503FB /* ViewableHandlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewableHandlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0DB2B2020806B0D00E503FB /* ViewableHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewableHandlerTests.swift; sourceTree = "<group>"; };
-		B0DB2B2220806B0D00E503FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0DB2B1B20806B0D00E503FB /* ViewableHandlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ViewableHandlerTests.xctest; path = VisibilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DB2B3020806B3400E503FB /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0DB2B3220806B3500E503FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0DB2B3420806B3500E503FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,10 +57,10 @@
 		B0DB2B3920806B3800E503FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0DB2B3C20806B3800E503FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0DB2B3E20806B3800E503FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0DB2B5220806C4500E503FB /* UIView+ViewableHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ViewableHandler.swift"; sourceTree = "<group>"; };
-		B0DB2B5420806D9500E503FB /* ViewableHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewableHandler.swift; sourceTree = "<group>"; };
-		B0DB2B5620806E8D00E503FB /* ViewableState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewableState.swift; sourceTree = "<group>"; };
-		B0DB2B5B2080C6E700E503FB /* ViewableHandlerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewableHandlerConfig.swift; sourceTree = "<group>"; };
+		B0DB2B5220806C4500E503FB /* UIView+Visibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Visibility.swift"; sourceTree = "<group>"; };
+		B0DB2B5420806D9500E503FB /* Visibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visibility.swift; sourceTree = "<group>"; };
+		B0DB2B5620806E8D00E503FB /* VisibilityState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityState.swift; sourceTree = "<group>"; };
+		B0DB2B5B2080C6E700E503FB /* VisibilityConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0DB2B1C20806B0D00E503FB /* ViewableHandler.framework in Frameworks */,
+				B0DB2B1C20806B0D00E503FB /* Visibility.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0DB2B5120806BB100E503FB /* ViewableHandler.framework in Frameworks */,
+				B0DB2B5120806BB100E503FB /* Visibility.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +93,7 @@
 		B0DB2B0820806B0D00E503FB = {
 			isa = PBXGroup;
 			children = (
-				B0DB2B1420806B0D00E503FB /* ViewableHandler */,
-				B0DB2B1F20806B0D00E503FB /* ViewableHandlerTests */,
+				B0DB2B1420806B0D00E503FB /* Visibility */,
 				B0DB2B3120806B3400E503FB /* Sample */,
 				B0DB2B1320806B0D00E503FB /* Products */,
 				B0DB2B5020806BB100E503FB /* Frameworks */,
@@ -107,33 +103,24 @@
 		B0DB2B1320806B0D00E503FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B0DB2B1220806B0D00E503FB /* ViewableHandler.framework */,
+				B0DB2B1220806B0D00E503FB /* Visibility.framework */,
 				B0DB2B1B20806B0D00E503FB /* ViewableHandlerTests.xctest */,
 				B0DB2B3020806B3400E503FB /* Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0DB2B1420806B0D00E503FB /* ViewableHandler */ = {
+		B0DB2B1420806B0D00E503FB /* Visibility */ = {
 			isa = PBXGroup;
 			children = (
-				B0DB2B1520806B0D00E503FB /* ViewableHandler.h */,
-				B0DB2B5420806D9500E503FB /* ViewableHandler.swift */,
-				B0DB2B5620806E8D00E503FB /* ViewableState.swift */,
-				B0DB2B5B2080C6E700E503FB /* ViewableHandlerConfig.swift */,
-				B0DB2B5220806C4500E503FB /* UIView+ViewableHandler.swift */,
+				B0DB2B1520806B0D00E503FB /* Visibility.h */,
+				B0DB2B5420806D9500E503FB /* Visibility.swift */,
+				B0DB2B5620806E8D00E503FB /* VisibilityState.swift */,
+				B0DB2B5B2080C6E700E503FB /* VisibilityConfig.swift */,
+				B0DB2B5220806C4500E503FB /* UIView+Visibility.swift */,
 				B0DB2B1620806B0D00E503FB /* Info.plist */,
 			);
-			path = ViewableHandler;
-			sourceTree = "<group>";
-		};
-		B0DB2B1F20806B0D00E503FB /* ViewableHandlerTests */ = {
-			isa = PBXGroup;
-			children = (
-				B0DB2B2020806B0D00E503FB /* ViewableHandlerTests.swift */,
-				B0DB2B2220806B0D00E503FB /* Info.plist */,
-			);
-			path = ViewableHandlerTests;
+			path = Visibility;
 			sourceTree = "<group>";
 		};
 		B0DB2B3120806B3400E503FB /* Sample */ = {
@@ -163,16 +150,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0DB2B2320806B0D00E503FB /* ViewableHandler.h in Headers */,
+				B0DB2B2320806B0D00E503FB /* Visibility.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B0DB2B1120806B0D00E503FB /* ViewableHandler */ = {
+		B0DB2B1120806B0D00E503FB /* Visibility */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0DB2B2620806B0D00E503FB /* Build configuration list for PBXNativeTarget "ViewableHandler" */;
+			buildConfigurationList = B0DB2B2620806B0D00E503FB /* Build configuration list for PBXNativeTarget "Visibility" */;
 			buildPhases = (
 				B0DB2B0D20806B0D00E503FB /* Sources */,
 				B0DB2B0E20806B0D00E503FB /* Frameworks */,
@@ -183,14 +170,14 @@
 			);
 			dependencies = (
 			);
-			name = ViewableHandler;
+			name = Visibility;
 			productName = ViewableHandler;
-			productReference = B0DB2B1220806B0D00E503FB /* ViewableHandler.framework */;
+			productReference = B0DB2B1220806B0D00E503FB /* Visibility.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B0DB2B1A20806B0D00E503FB /* ViewableHandlerTests */ = {
+		B0DB2B1A20806B0D00E503FB /* VisibilityTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0DB2B2920806B0D00E503FB /* Build configuration list for PBXNativeTarget "ViewableHandlerTests" */;
+			buildConfigurationList = B0DB2B2920806B0D00E503FB /* Build configuration list for PBXNativeTarget "VisibilityTests" */;
 			buildPhases = (
 				B0DB2B1720806B0D00E503FB /* Sources */,
 				B0DB2B1820806B0D00E503FB /* Frameworks */,
@@ -201,7 +188,7 @@
 			dependencies = (
 				B0DB2B1E20806B0D00E503FB /* PBXTargetDependency */,
 			);
-			name = ViewableHandlerTests;
+			name = VisibilityTests;
 			productName = ViewableHandlerTests;
 			productReference = B0DB2B1B20806B0D00E503FB /* ViewableHandlerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -246,7 +233,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B0DB2B0C20806B0D00E503FB /* Build configuration list for PBXProject "ViewableHandler" */;
+			buildConfigurationList = B0DB2B0C20806B0D00E503FB /* Build configuration list for PBXProject "Visibility" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -259,8 +246,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B0DB2B1120806B0D00E503FB /* ViewableHandler */,
-				B0DB2B1A20806B0D00E503FB /* ViewableHandlerTests */,
+				B0DB2B1120806B0D00E503FB /* Visibility */,
+				B0DB2B1A20806B0D00E503FB /* VisibilityTests */,
 				B0DB2B2F20806B3400E503FB /* Sample */,
 			);
 		};
@@ -298,10 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0DB2B5320806C4500E503FB /* UIView+ViewableHandler.swift in Sources */,
-				B0DB2B5C2080C6E700E503FB /* ViewableHandlerConfig.swift in Sources */,
-				B0DB2B5720806E8D00E503FB /* ViewableState.swift in Sources */,
-				B0DB2B5520806D9500E503FB /* ViewableHandler.swift in Sources */,
+				B0DB2B5320806C4500E503FB /* UIView+Visibility.swift in Sources */,
+				B0DB2B5C2080C6E700E503FB /* VisibilityConfig.swift in Sources */,
+				B0DB2B5720806E8D00E503FB /* VisibilityState.swift in Sources */,
+				B0DB2B5520806D9500E503FB /* Visibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +296,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0DB2B2120806B0D00E503FB /* ViewableHandlerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +313,7 @@
 /* Begin PBXTargetDependency section */
 		B0DB2B1E20806B0D00E503FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B0DB2B1120806B0D00E503FB /* ViewableHandler */;
+			target = B0DB2B1120806B0D00E503FB /* Visibility */;
 			targetProxy = B0DB2B1D20806B0D00E503FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -483,14 +469,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ViewableHandler/Info.plist;
+				INFOPLIST_FILE = Visibility/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.darquro.ViewableHandler;
+				PRODUCT_BUNDLE_IDENTIFIER = org.darquro.Visibility;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -510,14 +496,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ViewableHandler/Info.plist;
+				INFOPLIST_FILE = Visibility/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.darquro.ViewableHandler;
+				PRODUCT_BUNDLE_IDENTIFIER = org.darquro.Visibility;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -602,7 +588,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B0DB2B0C20806B0D00E503FB /* Build configuration list for PBXProject "ViewableHandler" */ = {
+		B0DB2B0C20806B0D00E503FB /* Build configuration list for PBXProject "Visibility" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0DB2B2420806B0D00E503FB /* Debug */,
@@ -611,7 +597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0DB2B2620806B0D00E503FB /* Build configuration list for PBXNativeTarget "ViewableHandler" */ = {
+		B0DB2B2620806B0D00E503FB /* Build configuration list for PBXNativeTarget "Visibility" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0DB2B2720806B0D00E503FB /* Debug */,
@@ -620,7 +606,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B0DB2B2920806B0D00E503FB /* Build configuration list for PBXNativeTarget "ViewableHandlerTests" */ = {
+		B0DB2B2920806B0D00E503FB /* Build configuration list for PBXNativeTarget "VisibilityTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B0DB2B2A20806B0D00E503FB /* Debug */,

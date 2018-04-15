@@ -1,6 +1,6 @@
 //
-//  UIView+ViewableHandler.swift
-//  ViewableHandler
+//  UIView+Visibility.swift
+//  Visibility
 //
 //  Created by yuki.kuroda on 2018/04/13.
 //  Copyright © 2018年 darquro. All rights reserved.
@@ -8,31 +8,31 @@
 
 import UIKit
 
-extension UIView: ViewableHandlerCompatible {}
+extension UIView: VisibilityCompatible {}
 
-extension ViewableHandler where Base: UIView {
+extension Visibility where Base: UIView {
     
-    public func setConfig(_ config: ViewableHandlerConfig) -> ViewableHandler {
+    public func setConfig(_ config: VisibilityConfig) -> Visibility {
         self.config = config
         return self
     }
     
-    public func setConfig(_ callback: @escaping (inout ViewableHandlerConfig) -> Void) -> ViewableHandler {
+    public func setConfig(_ callback: @escaping (inout VisibilityConfig) -> Void) -> Visibility {
         callback(&self.config)
         return self
     }
     
-    public func viewableChanged(_ callback: @escaping (ViewableState) -> Void) {
+    public func changed(_ callback: @escaping (VisibilityState) -> Void) {
         if self.config.timeInterval <= 0 {
-            print("ViewableHandler error: timeInterval must be greater than 0.")
+            print("Visibility error: timeInterval must be greater than 0.")
             return
         }
         if self.config.intersectionRatio <= 0 || self.config.intersectionRatio > 1.0 {
-            print("ViewableHandler error: intersectionRatio must be greater than 0 and less than or equal to 1.0.")
+            print("Visibility error: intersectionRatio must be greater than 0 and less than or equal to 1.0.")
             return
         }
         if self.config.transparencyRatio < 0 || self.config.transparencyRatio >= 1.0 {
-            print("ViewableHandler error: transparencyRatio must be greater than or equal to 0 and less than 1.0.")
+            print("Visibility error: transparencyRatio must be greater than or equal to 0 and less than 1.0.")
             return
         }
         if self.timer?.isValid ?? false {
@@ -49,14 +49,14 @@ extension ViewableHandler where Base: UIView {
         self.timer?.invalidate()
     }
     
-    func getViewableState(of view: UIView) -> ViewableState {
+    func getVisibilityState(of view: UIView) -> VisibilityState {
         let isVisibleAllViewHierarchy = self.isVisibleAllViewHierarchy(of: view, alpha: CGFloat(self.config.transparencyRatio))
         guard let window = getWindow(of: view) else {
             self.timer?.invalidate()
-            return .unviewable
+            return .unvisible
         }
         let isInWindow = self.isIntersectRect(target: view, parent: window, ratio: CGFloat(self.config.intersectionRatio))
-        return isVisibleAllViewHierarchy && isInWindow ? .viewable : .unviewable
+        return isVisibleAllViewHierarchy && isInWindow ? .visible : .unvisible
     }
     
     func isVisibleAllViewHierarchy(of view: UIView, alpha: CGFloat) -> Bool {

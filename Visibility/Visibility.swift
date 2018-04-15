@@ -1,6 +1,6 @@
 //
-//  ViewableHandler.swift
-//  ViewableHandler
+//  Visibility.swift
+//  Visibility
 //
 //  Created by yuki.kuroda on 2018/04/13.
 //  Copyright © 2018年 darquro. All rights reserved.
@@ -8,12 +8,12 @@
 
 import Foundation
 
-public class ViewableHandler<Base> {
+public class Visibility<Base> {
     public let base: Base
     var timer: Timer?
-    var state: ViewableState = ViewableState.unviewable
-    var config = ViewableHandlerConfig()
-    var callback: ((ViewableState) -> Void)?
+    var state: VisibilityState = VisibilityState.unvisible
+    var config = VisibilityConfig()
+    var callback: ((VisibilityState) -> Void)?
     
     public init (_ base: Base) {
         self.base = base
@@ -21,7 +21,7 @@ public class ViewableHandler<Base> {
     
     @objc func checkViewableTimerTask(_ timer: Timer) {
         guard let view = self.base as? UIView else { return }
-        let state = view.vh.getViewableState(of: view)
+        let state = view.visibility.getVisibilityState(of: view)
         if self.state != state {
             self.state = state
             self.callback?(self.state)
@@ -30,17 +30,17 @@ public class ViewableHandler<Base> {
     
 }
 
-public protocol ViewableHandlerCompatible {
+public protocol VisibilityCompatible {
     associatedtype Compatible
-    var vh: ViewableHandler<Compatible> { get }
+    var visibility: Visibility<Compatible> { get }
 }
 
-public extension ViewableHandlerCompatible {
-    public var vh: ViewableHandler<Self> {
-        if let instance = objc_getAssociatedObject(self, &associatedObjectKey) as? ViewableHandler<Self> {
+public extension VisibilityCompatible {
+    public var visibility: Visibility<Self> {
+        if let instance = objc_getAssociatedObject(self, &associatedObjectKey) as? Visibility<Self> {
             return instance
         }
-        let instance = ViewableHandler(self)
+        let instance = Visibility(self)
         objc_setAssociatedObject(self, &associatedObjectKey, instance, .OBJC_ASSOCIATION_RETAIN)
         return instance
     }
