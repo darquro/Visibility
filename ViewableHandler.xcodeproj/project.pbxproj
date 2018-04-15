@@ -20,6 +20,7 @@
 		B0DB2B5520806D9500E503FB /* ViewableHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2B5420806D9500E503FB /* ViewableHandler.swift */; };
 		B0DB2B5720806E8D00E503FB /* ViewableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2B5620806E8D00E503FB /* ViewableState.swift */; };
 		B0DB2B5C2080C6E700E503FB /* ViewableHandlerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DB2B5B2080C6E700E503FB /* ViewableHandlerConfig.swift */; };
+		B0DD73822083334100EF0AD3 /* ViewableHandler.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B0DB2B1220806B0D00E503FB /* ViewableHandler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,19 @@
 			remoteInfo = ViewableHandler;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B0DD73812083332800EF0AD3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B0DD73822083334100EF0AD3 /* ViewableHandler.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B0DB2B1220806B0D00E503FB /* ViewableHandler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewableHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +213,7 @@
 				B0DB2B2C20806B3400E503FB /* Sources */,
 				B0DB2B2D20806B3400E503FB /* Frameworks */,
 				B0DB2B2E20806B3400E503FB /* Resources */,
+				B0DD73812083332800EF0AD3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
