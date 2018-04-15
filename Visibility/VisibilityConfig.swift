@@ -10,7 +10,7 @@ import Foundation
 
 public struct VisibilityConfig {
     public var timeInterval: TimeInterval = 0.5
-    public var intersectionRatio: Float = 1.0
+    public var intersectionRatio: Float = 0.5
     public var transparencyRatio: Float = 0
     
     public init() {}
