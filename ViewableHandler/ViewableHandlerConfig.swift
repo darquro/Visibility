@@ -9,7 +9,7 @@
 import Foundation
 
 public struct ViewableHandlerConfig {
-    public var timeInterval: TimeInterval = 1.0
+    public var timeInterval: TimeInterval = 0.5
     public var intersectionRatio: Float = 1.0
     public var transparencyRatio: Float = 0
     
