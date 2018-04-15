@@ -45,7 +45,7 @@ extension ViewableHandler where Base: UIView {
         self.callback = callback
     }
     
-    public func inValidate() {
+    public func invalidate() {
         self.timer?.invalidate()
     }
     

@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func stopHandle(_ sender: Any) {
-        targetView.vh.inValidate()
+        targetView.vh.invalidate()
     }
     
     @IBAction func removeView(_ sender: Any) {
