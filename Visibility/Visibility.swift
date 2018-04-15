@@ -19,7 +19,7 @@ public class Visibility<Base> {
         self.base = base
     }
     
-    @objc func checkViewableTimerTask(_ timer: Timer) {
+    @objc func visibilityTimerTask(_ timer: Timer) {
         guard let view = self.base as? UIView else { return }
         let state = view.visibility.getVisibilityState(of: view)
         if self.state != state {

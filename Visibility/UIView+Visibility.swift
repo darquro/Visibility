@@ -39,7 +39,7 @@ extension Visibility where Base: UIView {
             self.timer?.invalidate()
         }
         
-        let timer = Timer(timeInterval: self.config.timeInterval, target: self, selector: #selector(checkViewableTimerTask(_:)), userInfo: nil, repeats: true)
+        let timer = Timer(timeInterval: self.config.timeInterval, target: self, selector: #selector(visibilityTimerTask(_:)), userInfo: nil, repeats: true)
         RunLoop.current.add(timer, forMode: .commonModes)
         self.timer = timer
         self.callback = callback
