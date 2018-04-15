@@ -23,17 +23,17 @@ extension Visibility where Base: UIView {
     
     /// Change the configuration
     ///
-    /// - Parameter callback: Update value of argument in this block
+    /// - Parameter block: Update value of argument in this block
     /// - Returns: Visibility instance
-    public func setConfig(_ callback: @escaping (inout VisibilityConfig) -> Void) -> Visibility {
-        callback(&self.config)
+    public func setConfig(_ block: @escaping (inout VisibilityConfig) -> Void) -> Visibility {
+        block(&self.config)
         return self
     }
     
     /// `changed` is called when visibility is changed
     ///
-    /// - Parameter callback: You can check the visibility state
-    public func changed(_ callback: @escaping (VisibilityState) -> Void) {
+    /// - Parameter block: You can check the visibility state
+    public func changed(_ block: @escaping (VisibilityState) -> Void) {
         if self.config.timeInterval <= 0 {
             print("Visibility error: timeInterval must be greater than 0.")
             return
@@ -53,7 +53,7 @@ extension Visibility where Base: UIView {
         let timer = Timer(timeInterval: self.config.timeInterval, target: self, selector: #selector(visibilityTimerTask(_:)), userInfo: nil, repeats: true)
         RunLoop.current.add(timer, forMode: .commonModes)
         self.timer = timer
-        self.callback = callback
+        self.changedCallback = block
     }
     
     /// Stop processing

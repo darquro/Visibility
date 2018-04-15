@@ -15,7 +15,7 @@ public class Visibility<Base> {
     var timer: Timer?
     var state: VisibilityState?
     var config = VisibilityConfig()
-    var callback: ((VisibilityState) -> Void)?
+    var changedCallback: ((VisibilityState) -> Void)?
     
     public init (_ base: Base) {
         self.base = base
@@ -26,7 +26,7 @@ public class Visibility<Base> {
         let state = view.visibility.getVisibilityState(of: view)
         if self.state != state {
             self.state = state
-            self.callback?(state)
+            self.changedCallback?(state)
         }
     }
     
