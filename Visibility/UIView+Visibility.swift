@@ -53,10 +53,10 @@ extension Visibility where Base: UIView {
         let isVisibleAllViewHierarchy = self.isVisibleAllViewHierarchy(of: view, alpha: CGFloat(self.config.transparencyRatio))
         guard let window = getWindow(of: view) else {
             self.timer?.invalidate()
-            return .unvisible
+            return .invisible
         }
         let isInWindow = self.isIntersectRect(target: view, parent: window, ratio: CGFloat(self.config.intersectionRatio))
-        return isVisibleAllViewHierarchy && isInWindow ? .visible : .unvisible
+        return isVisibleAllViewHierarchy && isInWindow ? .visible : .invisible
     }
     
     func isVisibleAllViewHierarchy(of view: UIView, alpha: CGFloat) -> Bool {

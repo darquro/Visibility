@@ -11,7 +11,7 @@ import Foundation
 public class Visibility<Base> {
     public let base: Base
     var timer: Timer?
-    var state: VisibilityState = VisibilityState.unvisible
+    var state: VisibilityState = VisibilityState.invisible
     var config = VisibilityConfig()
     var callback: ((VisibilityState) -> Void)?
     

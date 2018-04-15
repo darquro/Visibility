@@ -10,5 +10,5 @@ import Foundation
 
 public enum VisibilityState: String {
     case visible = "visible"
-    case unvisible = "unvisible"
+    case invisible = "invisible"
 }

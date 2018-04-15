@@ -30,7 +30,7 @@ class ViewController: UIViewController {
                 switch state {
                 case .visible:
                     self.navigationController?.navigationBar.barTintColor = UIColor.green
-                case .unvisible:
+                case .invisible:
                     self.navigationController?.navigationBar.barTintColor = UIColor.red
             }
             self.navigationItem.title = state.rawValue
