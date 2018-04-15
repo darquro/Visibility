@@ -1,9 +1,9 @@
 ![logo](./images/logo.png)
 
-[![CI Status](http://img.shields.io/travis/darquro/ViewableHandler.svg?style=flat)](https://travis-ci.org/darquro/ViewableHandler)
-[![Version](https://img.shields.io/cocoapods/v/ViewableHandler.svg?style=flat)](http://cocoapods.org/pods/ViewableHandler)
-[![License](https://img.shields.io/cocoapods/l/ViewableHandler.svg?style=flat)](http://cocoapods.org/pods/ViewableHandler)
-[![Platform](https://img.shields.io/cocoapods/p/ViewableHandler.svg?style=flat)](http://cocoapods.org/pods/ViewableHandler)
+[![CI Status](http://img.shields.io/travis/darquro/Visibility.svg?style=flat)](https://travis-ci.org/darquro/Visibility)
+[![Version](https://img.shields.io/cocoapods/v/Visibility.svg?style=flat)](http://cocoapods.org/pods/Visibility)
+[![License](https://img.shields.io/cocoapods/l/Visibility.svg?style=flat)](http://cocoapods.org/pods/Visibility)
+[![Platform](https://img.shields.io/cocoapods/p/Visibility.svg?style=flat)](http://cocoapods.org/pods/Visibility)
 
 Handle a view visibility in the window
 
