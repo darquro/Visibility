@@ -11,7 +11,7 @@ import Foundation
 public class Visibility<Base> {
     public let base: Base
     var timer: Timer?
-    var state: VisibilityState = VisibilityState.invisible
+    var state: VisibilityState?
     var config = VisibilityConfig()
     var callback: ((VisibilityState) -> Void)?
     
@@ -24,7 +24,7 @@ public class Visibility<Base> {
         let state = view.visibility.getVisibilityState(of: view)
         if self.state != state {
             self.state = state
-            self.callback?(self.state)
+            self.callback?(state)
         }
     }
     
