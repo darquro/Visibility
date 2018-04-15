@@ -12,16 +12,27 @@ extension UIView: VisibilityCompatible {}
 
 extension Visibility where Base: UIView {
     
+    /// Change the configuration
+    ///
+    /// - Parameter config: VisibilityConfig
+    /// - Returns: Visibility instance
     public func setConfig(_ config: VisibilityConfig) -> Visibility {
         self.config = config
         return self
     }
     
+    /// Change the configuration
+    ///
+    /// - Parameter callback: Update value of argument in this block
+    /// - Returns: Visibility instance
     public func setConfig(_ callback: @escaping (inout VisibilityConfig) -> Void) -> Visibility {
         callback(&self.config)
         return self
     }
     
+    /// `changed` is called when visibility is changed
+    ///
+    /// - Parameter callback: You can check the visibility state
     public func changed(_ callback: @escaping (VisibilityState) -> Void) {
         if self.config.timeInterval <= 0 {
             print("Visibility error: timeInterval must be greater than 0.")
@@ -45,6 +56,7 @@ extension Visibility where Base: UIView {
         self.callback = callback
     }
     
+    /// Stop processing
     public func invalidate() {
         self.timer?.invalidate()
     }

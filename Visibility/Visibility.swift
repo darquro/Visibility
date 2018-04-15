@@ -8,6 +8,8 @@
 
 import Foundation
 
+/// `Visibility` is able to handle a view visibility in the window
+/// You can access from the `visibility` property of UIView.
 public class Visibility<Base> {
     public let base: Base
     var timer: Timer?
@@ -36,6 +38,8 @@ public protocol VisibilityCompatible {
 }
 
 public extension VisibilityCompatible {
+    
+    /// `visibility` is able to handle a view visibility in the window
     public var visibility: Visibility<Self> {
         if let instance = objc_getAssociatedObject(self, &associatedObjectKey) as? Visibility<Self> {
             return instance
