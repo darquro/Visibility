@@ -11,32 +11,27 @@ import ViewableHandler
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var targetView: UIView! {
-        didSet {
-            targetView.alpha = 0.8
-        }
-    }
+    @IBOutlet weak var targetView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.navigationController?.navigationBar.isTranslucent = false
         
     }
     
     @IBAction func startHandle(_ sender: Any) {
         targetView.vh
-            .setConfig { config in
-                config.timeInterval = 0.5
-                config.viewableRatio = 1.0
-                config.transparencyRatio = 0.8
-            }
+//            .setConfig { config in
+//                config.timeInterval = 1.0
+//                config.intersectionRatio = 1.0
+//                config.transparencyRatio = 0.8
+//            }
             .viewableChanged { state in
-            switch state {
-            case .viewable:
-                self.navigationController?.navigationBar.barTintColor = UIColor.green
-            case .unviewable:
-                self.navigationController?.navigationBar.barTintColor = UIColor.red
+                switch state {
+                case .viewable:
+                    self.navigationController?.navigationBar.barTintColor = UIColor.green
+                case .unviewable:
+                    self.navigationController?.navigationBar.barTintColor = UIColor.red
             }
             self.navigationItem.title = state.rawValue
             print("\(self.currentTime): \(state.rawValue)")
