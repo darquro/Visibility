@@ -11,7 +11,11 @@ import Visibility
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var targetView: UIView!
+    @IBOutlet weak var targetView: UIView! {
+        didSet {
+//            targetView.alpha = 0.4
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +27,8 @@ class ViewController: UIViewController {
         targetView.visibility
 //            .setConfig { config in
 //                config.timeInterval = 1.0
-//                config.intersectionRatio = 1.0
-//                config.transparencyRatio = 0.8
+//                config.intersectionRatio = 0.8
+//                config.transparencyRatio = 0.5
 //            }
             .changed { state in
                 switch state {
