@@ -1,9 +1,3 @@
 language: objective-c
 osx_image: xcode9.3
-# xcode_project: Visibility.xcodeproj
-# xcode_scheme: Visibility
 script: xcodebuild clean && xcodebuild build -project Visibility.xcodeproj -scheme Visibility
-  # - xcodebuild -scheme Visibility -project Visibility.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' build test
-  
-# after_success:
-  # - bash <(curl -s https://codecov.io/bash)
