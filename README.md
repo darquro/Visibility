@@ -58,6 +58,12 @@ it, simply add the following line to your Podfile:
 pod "Visibility"
 ```
 
+To integrate MessageKit using [Carthage](https://github.com/Carthage/Carthage), add the following to your Cartfile:
+
+```
+github "darquro/Visibility"
+```
+
 ## Requirements
 
 - Swift 4.0 or later
